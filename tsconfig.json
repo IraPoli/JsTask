@@ -1,13 +1,29 @@
 {
     "compilerOptions": {
+        "baseUrl": ".",
+
+        "allowJs": false,
+
         "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
         "module": "commonjs",
+        "strict": true,
+        "noImplicitAny": false,
         "types": [
             "node",
             "@wdio/globals/types",
             "expect-webdriverio",
-            "@wdio/mocha-framework"
+            "@wdio/mocha-framework",
+            "jest"
         ],
-        "target": "es2022"
+        "target": "es2022",
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+		"outDir": "./build"
+
+
+        
     }
 }
